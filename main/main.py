@@ -15,3 +15,14 @@ bot_trainer.train([
     "How do you make coffee?",
     "You add coffee powder to the hot water, and let it brew!",
 ])
+
+while True:
+
+    prompt = input(":-$ ")
+
+    if prompt in exit_words:
+        break
+    
+    else:
+
+        print(f"☕ {initial_bot.get_response(prompt)}")
