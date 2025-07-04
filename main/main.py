@@ -1,6 +1,8 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 
+CORP_FILE = "chat.txt"
+
 initial_bot = ChatBot("CoffeeBot")
 
 exit_words = ("quit", "exit", "see you later", "talk to you later")
