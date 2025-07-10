@@ -16,3 +16,11 @@ def rem_chat_metadata(chat):
 
     cleaned_corp = re.sub(pattern, "", corpus_file_content)
     return tuple(cleaned_corp.split("\n"))
+
+def rem_unnecessary_text(corpus_text):
+
+    msgs = corpus_text[1:-1]
+
+    filter_out_msg = ("<Media omitted>",)
+
+    return tuple((m for m in msgs if m not in filter_out_msg))
