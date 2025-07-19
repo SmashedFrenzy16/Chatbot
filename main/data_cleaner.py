@@ -24,3 +24,8 @@ def rem_unnecessary_text(corpus_text):
     filter_out_msg = ("<Media omitted>",)
 
     return tuple((m for m in msgs if m not in filter_out_msg))
+
+def clean_corp(chat_file):
+
+    msg_corp = rem_chat_metadata("chat.txt")
+    return rem_unnecessary_text(msg_corp)
