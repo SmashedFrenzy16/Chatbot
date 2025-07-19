@@ -12,6 +12,8 @@ bot_trainer = ListTrainer(initial_bot)
 
 cleaned_corp = clean_corp(CORP_FILE)
 
+bot_trainer.train(cleaned_corp)
+
 bot_trainer.train([
     "Hello",
     "Hello there, what's up?",
