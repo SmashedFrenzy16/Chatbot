@@ -1,5 +1,6 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
+from data_cleaner import clean_corp
 
 CORP_FILE = "chat.txt"
 
