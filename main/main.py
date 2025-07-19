@@ -10,6 +10,8 @@ exit_words = ("quit", "exit", "see you later", "talk to you later")
 
 bot_trainer = ListTrainer(initial_bot)
 
+cleaned_corp = clean_corp(CORP_FILE)
+
 bot_trainer.train([
     "Hello",
     "Hello there, what's up?",
